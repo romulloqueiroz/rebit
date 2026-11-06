@@ -1,0 +1,15 @@
+[package]
+name = "rebit-platform-plugin"
+version = "0.1.0"
+edition = "2021"
+license = "AGPL-3.0-or-later"
+description = "Cadence native-protocol plugin wrapper for the Rebit Rust engine"
+
+[lib]
+name = "rebit_platform_plugin"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+rebit-rust = { path = ".." }
+plugin-api = { path = "../../platform/crates/plugin-api" }
+plugin-sdk = { path = "../../platform/crates/plugin-sdk" }

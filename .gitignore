@@ -1,4 +1,5 @@
 /target/
+/platform-plugin/target/
 /build/
 /dist/
 *.wav
